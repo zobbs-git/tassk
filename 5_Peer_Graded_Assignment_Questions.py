@@ -74,7 +74,7 @@ def compute_data_choice_2(df):
 app.layout = html.Div(children=[ 
                                 # TASK1: Add title to the dashboard
                                 # Enter your code below. Make sure you have correct formatting.
-                                   html.H1('US Domestic Airline Flights Performance', style={'textAlign':'center', 'color':'#503D36', 'font-size':24}).
+                                   html.H1('US Domestic Airline Flights Performance', style={'textAlign':'center', 'color':'#503D36', 'font-size':24}),
                                 # REVIEW2: Dropdown creation
                                 # Create an outer division 
                                      html.Div([
@@ -126,7 +126,7 @@ app.layout = html.Div(children=[
                                    html.Div([ 
                                            html.Div([ ], id='plot4'),
                                            html.Div([ ], id='plot5')
-                                           ], style={'display':'flex'})
+                                           ], style={'display':'flex'}),])
 
 # Callback function definition
 # TASK4: Add 5 ouput components
@@ -142,7 +142,7 @@ app.layout = html.Div(children=[
                [State("plot1", 'children'), State("plot2", "children"),
                 State("plot3", "children"), State("plot4", "children"),
                 State("plot5", "children")
-               ]),
+               ])
 # Add computation to callback function and return graph
 def get_graph(chart, year, children1, children2, c3, c4, c5):
       
